@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相册</title>
+	<link rel="stylesheet" type="text/css" href="../css/model1.css">
+
+</head>
+<body>
+<!--遮罩和显示大图-->
+<div id="picture_shade">  
+ 
+    <div id="close"><img src="../icon/close.png"></div>
+
+	<div id="picture_view">
+		<img src="../images/{{index}}.jpg" class="img" id="img_{{index}}">
+		
+		<div class="pre" id="pre_{{index}}"></div>
+		<div class="next" id="next_{{index}}"></div>
+		<div class="desc" id="desc_{{index}}"><p>{{desc}}</p></div>
+
+	</div>
+
+</div>	
+
+<!--显示小图-->
+ <div id="wrap"> 
+
+     <header>
+     	<input type="button" value="大图模式">
+     	<input type="button" value="3D模式">
+     	<input type="button" value="散乱模式">
+    </header> 
+    <div class="clear"></div>
+
+    <div id="container">
+    	<img src="../images/{{index}}.jpg" class="small_img" >
+    </div>
+
+    <footer></footer>
+
+ </div>
+</body>
+<script type="text/javascript" src="../javascript/model1.js"></script>
+</html>

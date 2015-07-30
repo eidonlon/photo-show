@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    
+        <link rel="stylesheet" type="text/css" href="../css/model2.css">
+</head>
+<body>
+<div id="wrap">  <!--最外层容器-->
+     <header>
+     	<input type="button" value="大图模式">
+     	<input type="button" value="3D模式">
+     	<input type="button" value="散乱模式">
+     	<!-- <input type="button" value="查看小图"> -->
+     </header>
+     
+     <div class="slider">
+     	<div class="main" id="temp_main">
+
+     		<div class="main_i" id="main_{{index}}">
+     			<img src="../images/{{index}}.jpg" class="img">
+     			<div class="desc">{{desc}}</div>
+     		</div>
+     		
+     	</div>
+
+     	<div class="ctrl" id="temp_ctrl" >
+
+     		<div class="ctrl_i" id="ctrl_{{index}}">
+     			<img src="../images/{{index}}.jpg" >
+     		</div>
+     		
+     	</div>
+     </div>
+
+ </div>
+</body>
+<script type="text/javascript" src="../javascript/data.js"></script>
+<script type="text/javascript" src="../javascript/model2.js"></script>
+</html>

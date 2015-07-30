@@ -1,0 +1,193 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#container{
+	width: auto;
+	background-color: #F1F0F0;
+	position: relative;
+	overflow-x:auto;
+	overflow-y: hidden;
+
+}
+
+
+header{
+	width: 200px;
+	height: 100%;
+	background-color:black;
+	/*border-right:3px solid #ccc;*/
+    position: absolute;
+/*    display: none;*/
+
+}
+
+header .pic{
+
+	position: relative;
+	width: 180px;
+	height: 180px;
+	background-color: white;
+	margin:30px auto;
+	border-radius: 50%;
+	background-image: url(../images/pic2.jpg);
+}
+
+header p{
+	color: white;
+	font-size:0.9em;
+	margin-top: 10%;
+	margin-left: 10%;
+
+}
+
+header ul{
+	font-size: 1.2em;
+	margin-top: 50px;
+	min-height:280px;
+	height: auto;
+	overflow: auto; 
+}
+header ul select{
+	width: 170px;
+	margin-left: 15px;
+	height: 35px;
+	background-color:#1B1B1B;
+	color: white;
+	border: 1px solid white;
+	font-weight: bolder;
+	font-size: 18px;
+}
+/*header ul select option{
+	margin-left: 30px;
+}*/
+
+header ul li{
+	text-align: center;
+	list-style: none;
+	line-height: 40px;
+}
+header ul li a{
+	text-decoration: none;
+	color: white;
+}
+header ul li .tip{
+	margin-left: 50px;
+}
+
+header .about{
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 1.5em;
+	text-decoration: none;
+    margin-top: 20px;
+
+}
+
+header ul a:hover{
+	color: red;
+}
+.clear{
+	clear: both;
+}
+
+#close{
+	display: block;
+	position: absolute;
+	right: 5px;
+	top:5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+#replace{
+	width: 70px;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	display: none;
+}
+#replace #button{
+	position: relative;
+	width: auto;
+	height: auto;
+	margin-top: 25px;
+	cursor: pointer;
+}
+#replace hr{
+	position: relative;
+	width: 60px;
+	height: 4px;
+	margin-top: 10px;
+	background-color: white;
+	margin-left: 5px;
+}
+
+#main{
+	position: absolute;
+	width: auto;
+	height: 100%;
+	left:200px;
+}
+
+#main .category{
+	height: 100%;
+	position: relative;
+	float: left;
+	width: auto;
+	min-width:300px;
+	max-width: 500px;
+}
+
+#main .category img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+}
+
+#main .category .box_shade{
+	top:0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.7);
+/*    text-align: center;*/
+	/*z-index: 9;*/
+}
+
+#main .category .box_shade:hover{
+	background-color:rgba(0,0,0,0);
+}
+
+
+#main .category .box_shade .menu{
+	width:150px;
+	height:150px;
+	background-color:#282828;
+	position: relative;
+    top:50%;
+	margin:-75px auto;
+    text-align: center;
+    line-height: 150px;
+	border-radius: 50%;
+	color: white;
+	font-weight: bolder;
+	font-size: 1em;
+	cursor: pointer;
+}
+#main .category .box_shade .menu a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+/*#main .category .box_shade .menu:hover{
+	width: 180px;
+	height: 180px;
+    line-height: 180px;
+    margin:-90px auto;
+}
+*/
