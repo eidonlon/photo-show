@@ -67,12 +67,7 @@ var aMenu = g(".menu");
 for(var i = 0;i < aBox_shade.length;i++){
 	aBox_shade[i].index = i;
 	aBox_shade[i].onmouseover = function(){
-        aMenu[this.index].style.width = "190px";
-        aMenu[this.index].style.height = "190px";
-        aMenu[this.index].style.lineHeight = "190px";
-        aMenu[this.index].style.marginLeft = "auto";
-        aMenu[this.index].style.marginTop = "-95px";
-
+        aMenu[this.index].className+=" change";
 	}
 	aBox_shade[i].onmouseout = function(){
 		aMenu[this.index].style.width = "150px";
